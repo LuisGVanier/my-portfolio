@@ -2,7 +2,7 @@
 
 Responsive single-page portfolio built for the Front-End Programming mini-project at Vanier College.
 
-**Live site:** https://LuisGVanier.github.io/portfolio/
+**Live site:** https://LuisGVanier.github.io/my-portfolio/
 
 ## Built with
 
