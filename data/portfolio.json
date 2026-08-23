@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": "restaurant-reservation",
+      "title": "Restaurant Table Reservation System",
+      "summary": "A console-based reservation system that manages table bookings across a 5×7 floor plan and three daily seating shifts (Brunch, Lunch, Dinner), preventing double-bookings and validating each request in real time.",
+      "description": "Built as my capstone project for Programming Concepts 1, this system models a restaurant's seating chart as a 5×7 grid and lets staff book tables across three shifts — Brunch, Lunch, and Dinner — while preventing overlapping reservations. I used enums to represent shift types and table states, and wrote unit tests to check the booking logic against edge cases like fully booked shifts and back-to-back bookings.",
+      "tags": ["Java", "OOP"],
+      "technologies": ["Java", "Enums", "Unit Testing"],
+      "role": "Solo project",
+      "thumbnail": "img/project1.png",
+      "images": ["img/project1.png"],
+      "github": null
+    },
+    {
+      "id": "course-registration",
+      "title": "Course Registration System",
+      "summary": "A SQL Server database project for managing student course registrations, designed with a full ERD and class diagram and backed by stored procedures and views for enrollment and academic performance reporting.",
+      "description": "Developed as a group database project, this system models student course registration with a complete ERD and class diagram. I focused on the schema and ERD design, built the stored procedures, and put together the Excel report and supporting documentation. I also contributed to other areas of the project, such as the views.",
+      "tags": ["SQL Server", "T-SQL", "ERD"],
+      "technologies": ["SQL Server", "T-SQL", "ERD / Class Diagram design"],
+      "role": "Team member — schema/ERD design, stored procedures, and reporting documentation",
+      "thumbnail": "img/project2.png",
+      "images": ["img/project2.png"],
+      "github": null
+    },
+    {
+      "id": "course-registration-frontend",
+      "title": "Course Registration System — Front End",
+      "summary": "The web interface for the course registration system: a multi-page Bootstrap 5 front end with a client-side JSON data layer that mirrors the SQL schema, currently in development.",
+      "description": "The second phase of the course registration project, building the front end over the database designed in the previous segment. The interface is a multi-page Bootstrap 5 site covering login, student registration, the course catalogue, student profiles and an admin dashboard. Rather than querying the database directly, the pages read from a shared JSON data layer that mirrors the SQL schema, so the front end can be built and tested independently before the API work in the next segment. My contribution is the front-end architecture: the shared data layer, the dynamic rendering of catalogue and enrollment lists, and the registration flow including the enrollment confirmation modal.",
+      "tags": ["JavaScript", "Bootstrap", "JSON"],
+      "technologies": ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "JSON"],
+      "role": "Team project — front-end architecture, JSON data layer, and dynamic rendering",
+      "thumbnail": "img/placeholder.svg",
+      "images": ["img/placeholder.svg"],
+      "github": null
+    }
+  ]
+}
