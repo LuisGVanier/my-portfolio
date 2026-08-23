@@ -1,0 +1,94 @@
+:root {
+  --brand: #1e3a5f;
+  --brand-dark: #16304e;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 70px; /* clears the fixed navbar */
+}
+
+section[id] {
+  scroll-margin-top: 70px;
+}
+
+.bg-brand {
+  background-color: var(--brand);
+}
+
+.text-bg-brand {
+  background-color: var(--brand);
+  color: #fff;
+}
+.text-bg-accent {
+  background-color: var(--accent);
+  color: #000;
+}
+
+/* Bootstrap 5.3 buttons read their own --bs-btn-* variables, not --bs-primary. */
+.btn-brand {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--brand-dark);
+  --bs-btn-hover-border-color: var(--brand-dark);
+  --bs-btn-active-bg: var(--brand-dark);
+  --bs-btn-active-border-color: var(--brand-dark);
+}
+
+.btn-accent {
+  --bs-btn-color: #000;
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--accent-dark);
+  --bs-btn-hover-border-color: var(--accent-dark);
+  --bs-btn-active-bg: var(--accent-dark);
+  --bs-btn-active-border-color: var(--accent-dark);
+}
+
+.progress-bar {
+  background-color: var(--brand);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #eef2f7;
+  color: var(--brand);
+}
+
+.hero-name {
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero-name .first-name {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-name .last-name {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid rgba(255, 255, 255, 0.25);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
