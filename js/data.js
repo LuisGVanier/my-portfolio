@@ -62,6 +62,9 @@ function buildCard(project) {
   const githubButton = project.github
     ? `<a href="${escapeHtml(project.github)}" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">GitHub</a>`
     : "";
+  const demoButton = project.demo
+    ? `<a href="${escapeHtml(project.demo)}" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Live demo</a>`
+    : "";
 
   return `
     <div class="col-md-6 col-lg-4">
@@ -74,6 +77,7 @@ function buildCard(project) {
           <div class="mt-auto d-flex gap-2">
             <button type="button" class="btn btn-brand btn-sm" data-bs-toggle="modal" data-bs-target="#modal-${project.id}">View details</button>
             ${githubButton}
+            ${demoButton}
           </div>
         </div>
       </div>
@@ -83,6 +87,9 @@ function buildCard(project) {
 function buildModal(project) {
   const githubButton = project.github
     ? `<a href="${escapeHtml(project.github)}" class="btn btn-brand" target="_blank" rel="noopener">View on GitHub</a>`
+    : "";
+  const demoButton = project.demo
+    ? `<a href="${escapeHtml(project.demo)}" class="btn btn-outline-secondary" target="_blank" rel="noopener">Live demo</a>`
     : "";
 
   return `
@@ -102,6 +109,7 @@ function buildModal(project) {
             </ul>
           </div>
           <div class="modal-footer">
+            ${demoButton}
             ${githubButton}
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>

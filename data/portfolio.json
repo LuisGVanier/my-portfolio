@@ -1,6 +1,67 @@
 {
   "projects": [
     {
+      "id": "flower-shop",
+      "title": "Flower Shop Management System",
+      "summary": "A PyQt6 desktop application for a flower shop: customers, catalog, orders, billing, supplier restocking and sales analytics, backed by a MySQL database.",
+      "description": "Built in three iterations for my Application Development course. Staff log in with one of three access levels (Clerk, Manager, Admin), with passwords stored hashed. Orders update the stock automatically, and the billing module applies only the charges that fit each order, such as the delivery fee or pots for plants. Later iterations moved the data to MySQL and added supplier restocking, order follow-up, management reports, matplotlib sales charts, and console unit and integration tests.",
+      "tags": ["Python", "PyQt6", "MySQL"],
+      "technologies": ["Python", "PyQt6", "MySQL", "matplotlib", "hashlib"],
+      "role": "Solo project",
+      "thumbnail": "img/project4.png",
+      "images": ["img/project4.png"],
+      "github": "https://github.com/Lugermolina/FlowerShopProject"
+    },
+    {
+      "id": "retail-shopping",
+      "title": "Retail Shopping System",
+      "summary": "A C# Windows Forms application for a retail store: customer and product management, purchases with Quebec sales taxes, inventory alerts and sales reports on SQL Server.",
+      "description": "Built in three iterations for my System Development course, following an Agile SDLC with full analysis and design documents. Staff log in with one of three roles, and the menus adapt to each role. Purchases support registered and walk in customers, apply GST and QST only to taxable products, and record the staff member who processed each sale. The data lives in seven SQL Server tables (users, categories, products, customers, orders, order lines and payments) with full CRUD operations, low stock alerts, and sales and administration reports with bar charts.",
+      "tags": ["C#", ".NET", "SQL Server"],
+      "technologies": ["C#", ".NET Windows Forms", "SQL Server", "ADO.NET"],
+      "role": "Solo project",
+      "thumbnail": "img/project5.png",
+      "images": ["img/project5.png"],
+      "github": "https://github.com/Lugermolina/RetailShoppingFormProject"
+    },
+    {
+      "id": "course-registration-services",
+      "title": "Course Registration Web Services",
+      "summary": "A Java REST service on GlassFish for course registration, with HTML forms, a Jersey client application and a separate SOAP service, backed by SQL Server.",
+      "description": "Built in three iterations for my Web Services course, on the domain of my earlier course registration project. Jersey resources expose the catalog, sections, students, enrollments and payments through GET, POST, PUT and DELETE, and HTML forms cover signup, login and course management. Staff accounts have three access levels (clerk, manager, admin). A Jersey client application consumes the services, a separate SOAP service handles part of the logic, and accounts, courses and departments are stored in SQL Server through JDBC.",
+      "tags": ["Java", "REST", "SOAP", "SQL Server"],
+      "technologies": ["Java", "Jakarta EE", "Jersey (JAX-RS)", "SOAP", "GlassFish", "JDBC", "SQL Server", "HTML/CSS"],
+      "role": "Solo project",
+      "thumbnail": "img/project6.png",
+      "images": ["img/project6.png"],
+      "github": "https://github.com/Lugermolina/WebCourseRegistrationRESTProject"
+    },
+    {
+      "id": "course-registration-frontend",
+      "title": "Course Registration System (Front End)",
+      "summary": "A multi-page Bootstrap 5 web application for course registration, with a JavaScript data layer over JSON that mirrors the SQL Server schema.",
+      "description": "The second phase of the course registration project, building the web interface over the database designed in the previous segment. The site covers login, student registration with validation, a searchable course catalog, student profiles and an admin dashboard. The pages read from a shared JavaScript data layer over JSON that mirrors the SQL schema. My contribution covered most of the implementation: the shared data layer, the dynamic rendering of the catalog and enrollment lists, and the registration flow with its enrollment confirmation modal. The site is deployed on GitHub Pages.",
+      "tags": ["JavaScript", "Bootstrap", "JSON"],
+      "technologies": ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "JSON"],
+      "role": "Team project: front end architecture, JSON data layer and dynamic rendering",
+      "thumbnail": "img/project3.png",
+      "images": ["img/project3.png"],
+      "github": "https://github.com/LuisGVanier/course-registration-system",
+      "demo": "https://luisgvanier.github.io/course-registration-system/"
+    },
+    {
+      "id": "course-registration",
+      "title": "Course Registration System (Database)",
+      "summary": "A SQL Server database for managing student course registrations, designed with a full ERD and class diagram and backed by stored procedures and views for enrollment and academic performance reporting.",
+      "description": "Developed as a group database project, this system models student course registration with a complete ERD and class diagram. I focused on the schema and ERD design, built the stored procedures, and put together the Excel report and supporting documentation. I also contributed to other areas of the project, such as the views.",
+      "tags": ["SQL Server", "T-SQL", "ERD"],
+      "technologies": ["SQL Server", "T-SQL", "ERD and class diagram design"],
+      "role": "Team member: schema and ERD design, stored procedures, and reporting documentation",
+      "thumbnail": "img/project2.png",
+      "images": ["img/project2.png"],
+      "github": null
+    },
+    {
       "id": "restaurant-reservation",
       "title": "Restaurant Table Reservation System",
       "summary": "A console-based reservation system that manages table bookings across a 5×7 floor plan and three daily seating shifts (Brunch, Lunch, Dinner), preventing double-bookings and validating each request in real time.",
@@ -10,30 +71,6 @@
       "role": "Solo project",
       "thumbnail": "img/project1.png",
       "images": ["img/project1.png"],
-      "github": null
-    },
-    {
-      "id": "course-registration",
-      "title": "Course Registration System (Database)",
-      "summary": "A SQL Server database project for managing student course registrations, designed with a full ERD and class diagram and backed by stored procedures and views for enrollment and academic performance reporting.",
-      "description": "Developed as a group database project, this system models student course registration with a complete ERD and class diagram. I focused on the schema and ERD design, built the stored procedures, and put together the Excel report and supporting documentation. I also contributed to other areas of the project, such as the views.",
-      "tags": ["SQL Server", "T-SQL", "ERD"],
-      "technologies": ["SQL Server", "T-SQL", "ERD / Class Diagram design"],
-      "role": "Team member — schema/ERD design, stored procedures, and reporting documentation",
-      "thumbnail": "img/project2.png",
-      "images": ["img/project2.png"],
-      "github": null
-    },
-    {
-      "id": "course-registration-frontend",
-      "title": "Course Registration System (Front End)",
-      "summary": "The web interface for the course registration system: a multi-page Bootstrap 5 front end with a client-side JSON data layer that mirrors the SQL schema, currently in development.",
-      "description": "The second phase of the course registration project, building the front end over the database designed in the previous segment. The interface is a multi-page Bootstrap 5 site covering login, student registration, the course catalogue, student profiles and an admin dashboard. Rather than querying the database directly, the pages read from a shared JSON data layer that mirrors the SQL schema, so the front end can be built and tested independently before the API work in the next segment. My contribution is the front-end architecture: the shared data layer, the dynamic rendering of catalogue and enrollment lists, and the registration flow including the enrollment confirmation modal.",
-      "tags": ["JavaScript", "Bootstrap", "JSON"],
-      "technologies": ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "JSON"],
-      "role": "Team project — front-end architecture, JSON data layer, and dynamic rendering",
-            "thumbnail": "img/project3.png",
-      "images": ["img/project3.png"],
       "github": null
     }
   ]
